@@ -9,5 +9,5 @@ input="MidwayFile.txt"
 while IFS= read -r line
 do
 	echo "$line"
-done < "$input" | awk '{$4=$4","}1' | awk '{$9=$9","}1' | sed 's#, #,#g' >> $outputname
+done < "$input" | awk '{$4=$4","}1' | awk '{$10=$10","}1' | awk '{$8=$8","}1' | sed 's#, #,#g' >> $outputname
 
